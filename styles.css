@@ -1,7 +1,16 @@
 body{
     display: flex;
+    position: fixed;
+    padding: 0px;
+    margin: 0px;
 
-    background-image: SAMPLE.jpg;
+    background-image: url('SAMPLE.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+
+    /* Pa-fix ng background image please huhu. */
 }
 
 .navbar {
@@ -19,7 +28,7 @@ body{
 
 .navbar__categories{
     position: absolute;
-    left: 68.48%;
+    left: 64.48%;
     right: 22.69%;
     top: 18.28%;
     bottom: 19.35%;
@@ -48,7 +57,7 @@ body{
 
 .navbar__cart{
     position: absolute;
-    left: 80.31%;
+    left: 76.31%;
     right: 14.81%;
     top: 18.28%;
     bottom: 19.35%;
@@ -78,8 +87,8 @@ body{
 
 .navbar__login{
     position: absolute;
-    left: 86.9%;
-    right: 4.96%;
+    left: 82.9%;
+    right: 8.96%;
     top: 18.28%;
     bottom: 19.35%;
 
@@ -97,4 +106,104 @@ body{
     /* TEXT */
 
     color: #FFFFFF;
+}
+
+.body__sectionleft{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 6px 0px;
+
+    position: absolute;
+    width: 560px;
+    height: 554px;
+    left: 98px;
+
+}
+
+.body__text{
+    width: 560px;
+    height: 441px;
+
+    font-family: 'Bodoni Moda';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 95.37px;
+    line-height: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.body__shopnow{
+    /* SHOP NOW */
+    width: 150px;
+    height: 45px;
+
+    /* LOGO TEXT */
+
+    background: #F4722B;
+    border: none;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 37px;
+    /* display: flex;
+    align-items: center;
+    text-align: center; */
+
+    color: #FFFFFF;
+}
+
+.body__sectionright{
+    position: absolute;
+    width: 555px;
+    height: 51px;
+    left: 840px;
+    top: 400px;
+}
+
+.body__search{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+    border-bottom: 3px solid white;
+}
+
+.body__search::placeholder{
+    color: white;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 37px;
+
+    text-align: right;
+}
+
+.body__search:focus{
+    color: white;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-size: 20px;
 }
