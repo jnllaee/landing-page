@@ -1,3 +1,100 @@
+body{
+    display: flex;
+
+    background-image: SAMPLE.jpg;
+}
+
 .navbar {
-    background-color: skyblue;
+    display: flex;
+    position: absolute;
+    width: 1512px;
+    height: 70px;
+    left: 0px;
+    top: 0px;
+
+    /* NAVBAR */
+
+    background: #000000;
+}
+
+.navbar__categories{
+    position: absolute;
+    left: 68.48%;
+    right: 22.69%;
+    top: 18.28%;
+    bottom: 19.35%;
+}
+
+.navbar__categtext{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    /* SMALL TEXT */
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.navbar__cart{
+    position: absolute;
+    left: 80.31%;
+    right: 14.81%;
+    top: 18.28%;
+    bottom: 19.35%;
+
+}
+
+.navbar__carttext{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    /* SMALL TEXT */
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.navbar__login{
+    position: absolute;
+    left: 86.9%;
+    right: 4.96%;
+    top: 18.28%;
+    bottom: 19.35%;
+
+    /* LOGO TEXT */
+
+    background: #F4722B;
+    border-radius: 10px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    /* TEXT */
+
+    color: #FFFFFF;
 }
