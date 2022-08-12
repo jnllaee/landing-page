@@ -5,12 +5,11 @@ body{
     margin: 0px;
 
     background-image: url('SAMPLE.jpg');
-    background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
     width: 100%;
 
-    /* Pa-fix ng background image please huhu. */
 }
 
 .navbar {
@@ -24,6 +23,36 @@ body{
     /* NAVBAR */
 
     background: #000000;
+}
+
+.navbar__logo{
+    position: absolute;
+    left: 4.7%;
+    right: 76.19%;
+    top: 0%;
+    bottom: 0%;
+
+}
+
+.navbar__logotext{
+    position: absolute;
+    left: 0.35%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    font-family: 'DM Serif Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 39.06px;
+    line-height: 54px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* LOGO TEXT */
+
+    color: #F4722B;
 }
 
 .navbar__categories{
@@ -96,6 +125,7 @@ body{
 
     background: #F4722B;
     border-radius: 10px;
+    border: none;
 
     font-family: 'Rubik';
     font-style: normal;
@@ -106,6 +136,18 @@ body{
     /* TEXT */
 
     color: #FFFFFF;
+}
+
+.navbar__login:hover{
+    position: absolute;
+    width: 123px;
+    height: 44.3px;
+
+    /* HOVER */
+
+    background: #B3A78C;
+    border-radius: 10px;
+    border: none;
 }
 
 .body__sectionleft{
@@ -130,6 +172,7 @@ body{
     font-weight: 700;
     font-size: 95.37px;
     line-height: 145px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -173,6 +216,16 @@ body{
     color: #FFFFFF;
 }
 
+.body__shopnow:hover{
+    position: relative;
+    width: 150px;
+    height: 45px;
+
+    background: #CD500C;
+
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+}
+
 .body__sectionright{
     position: absolute;
     width: 555px;
@@ -206,4 +259,40 @@ body{
     font-family: 'Work Sans';
     font-style: normal;
     font-size: 20px;
+}
+
+.body__contactus{
+    position: absolute;
+    top: 90%;
+    left: 90%;
+
+    width: 120px;
+    height: 50px;
+
+    background: #F4722B;
+    border: 3px solid #FFFFFF;
+    border-radius: 50px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+
+    /* TEXT */
+
+    color: #FFFFFF;
+}
+
+.body__contactus:hover{
+    position: absolute;
+    width: 120px;
+    height: 50px;
+
+    /* SHOP NOW HOVER */
+
+    background: #CD500C;
+    border: 3px solid #FFFFFF;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
 }
