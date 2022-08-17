@@ -62,18 +62,19 @@ header.sticky{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 24px;
+    transition: all 1s ease-out;
+}
+
+.logo{
+    width: 170px;
+    height: 230px;
+    object-fit: cover;
 
     margin-right: 30px;
+}
 
-    width: 170px;
-
-    font-family: 'Bree Serif', serif;
-    font-size: 36px;
-    color: #fff;
-
-    text-decoration: none;
-    transition: all 1s ease-out;
+.logo--dark{
+    display: none;
 }
 
 #placeholder{
@@ -92,7 +93,7 @@ header.sticky{
 /* Search Section */
 
 form{
-    max-width: 450px;
+    max-width: 500px;
 }
 
 .input__container i{
@@ -111,7 +112,7 @@ form{
     box-sizing: border-box;
     display: block;
 
-    width: 450px;
+    width: 500px;
     max-height: 50px;
 
     font-family: 'Poppins', sans-serif;
@@ -133,6 +134,8 @@ form{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    width: auto;
 }
 
 .navbar__btn{
@@ -223,7 +226,15 @@ form{
     transition: all 1s ease;
 }
 
-header.sticky .navbar__logo, header.sticky .navbar__btntext{
+header.sticky .logo--light{
+    display: none;
+}
+
+header.sticky .logo--dark{
+    display: inline;
+}
+
+header.sticky .navbar__btntext{
     color: #57473A;
 }
 
