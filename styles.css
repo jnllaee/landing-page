@@ -18,7 +18,7 @@ body{
     height: 100vh;
     z-index: 999;
 
-    background-image: url(Images/uplb.jpg);
+    background-image: url(Images/uplb2.jpg);
     background-size: cover;
 }
 
@@ -240,4 +240,109 @@ header.sticky .navbar__btntext{
 
 header.sticky .navbar__divider--reg{
     background: #57473A;
+}
+
+/* Header Section */
+
+.header__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 90vh;
+    gap: 14px;
+}
+
+.header__main, .header__subtext{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.065em;
+    
+    color: #fff;
+
+    transition: all 2s ease-in-out;
+
+    margin: 0px;
+    padding: 0px;
+
+    text-shadow: 1px 1px 5px rgb(0, 0, 0, .5);
+    text-align: center;
+
+    cursor: context-menu;
+}
+
+.header__main{
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 56px;
+
+}
+
+.header__subtext{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* Scroll Button */
+
+.scrollbtn{
+    position: absolute;
+    height: 3em;
+    width: 2.25em;
+
+    border: .10em solid #fff;
+    border-radius: 2em;
+
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 4.25em;
+
+    z-index: -1;
+}
+
+.scrollbtn:before{
+    content: "";
+    position: absolute;
+
+    margin: auto;
+    top: 4px;
+    left: 0;
+    right: 0;
+    width: .15em;
+    height: 10px;
+
+    background-color: #fff;
+    border-radius: 10px;
+
+    animation: move-down 2s infinite;
+}
+
+@keyframes move-down{
+    80%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(1.5em);
+        opacity: 0;
+    }
+}
+
+.scrollbtn:after{
+    content: "scroll down";
+    position: absolute;
+    display: block;
+
+    left: -62px;
+    bottom: -30px;
+
+    width: 10em;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.065em;
+    color: #fff;
+
+    text-align: center;
 }
