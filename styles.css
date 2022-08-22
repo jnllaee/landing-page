@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -345,4 +349,435 @@ header.sticky .navbar__divider--reg{
     color: #fff;
 
     text-align: center;
+}
+
+/* Body Section */
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: auto;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.body__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: auto;
+
+    margin: 40px;
+
+}
+
+/* Categories Section */
+
+.body__categcontainer{
+    display: flex;
+    flex-direction: column;
+
+    width: 1350px;
+    height: 220px;
+
+    background: #fff;
+}
+
+.categ__btn{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 26px;
+    letter-spacing: 0.065em;
+
+    padding: 25px;
+    margin: 0px;
+
+    text-decoration: none;
+
+    color: #57473A;
+}
+
+.body__categories{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}
+
+.categ__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: 123px;
+    height: 132px;
+
+    margin: 0px;
+    padding: 5px;
+    
+    border: 1px solid #acacac;
+}
+
+.categ__item:hover{
+    border: 2px solid #acacac;
+}
+
+.categ__item:hover .categ__name{
+    font-weight: bold;
+}
+
+.categ__itembtn{
+    text-decoration: none;
+}
+
+.categ__name{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    text-align: center;
+
+    color: #000;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.image{
+    width: auto;
+    height: 70px;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+#gadgetsimg, #bedimg{
+    width: 100px;
+}
+
+/* Trending Section */
+
+.body__trendcontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 1350px;
+    height: 210px;
+
+    margin-top: 40px;
+
+    background: #fff;
+}
+
+.trend__block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: auto;
+
+    padding: 25px;
+    margin: 0px;
+}
+
+.trend__btn{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 35px;
+    letter-spacing: 0.065em;
+    text-align: center;
+
+    margin: 0px;
+
+    text-decoration: none;
+
+    color: #57473A;
+
+    cursor: context-menu;
+}
+
+.trend__subtext{
+    position: relative;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.065em;
+
+    text-decoration: none;
+
+    margin: 20px 0px 10px 0px;
+    
+    color: #57473A;
+
+    transition: all 1s ease-out;
+}
+
+.trend__subtext:hover{
+    font-weight: bold;
+
+    transition: all 1s ease;
+}
+
+.fa-circle-arrow-right{
+    font-size: 2em;
+    text-align: center;
+
+    padding: 0px;
+
+    transition: all 1s ease-out;
+}
+
+.fa-circle-arrow-right:hover{
+    color: #a89687;
+
+    transition: all 1s ease;
+}
+
+.navbar__divider--trend{
+    width: 2px;
+    height: 170px;
+
+    background: #57473A;
+}
+
+/* Trending Containers */
+
+.trend__scrollbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    margin-left: 20px;
+    width: 1140px;
+    height: 210px;
+
+    overflow-x: scroll;
+    overscroll-behavior: contain;    
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+    height: 7px;
+
+    background: #dcdcdc;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #57473A;
+
+    border-radius: 7px;
+}
+
+.trend__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    margin-right: 20px;
+
+    transition: all 1s ease-out;
+}
+
+.trend__item:hover{
+    filter: drop-shadow(4px 4px 4px #393837);
+
+    transition: all 1s ease;
+}
+
+.trend__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    width: 500px;
+
+    background: #D9D9D9;
+    border-radius: 25px;
+}
+
+.trend__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    gap: 7px;
+
+    margin: 20px;
+}
+
+.trend__title, .trend__subtitle{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.065em;
+    color: #000;
+
+    margin: 0px;
+}
+
+.trend__title{
+    font-weight: 700;
+}
+
+.trend__subtitle{
+    font-weight: 400;
+}
+
+.img__placeholder{
+    width: 280px;
+    height: 150px;
+
+    background-size: cover;
+
+    margin-right: 40px;
+}
+
+#wifipasalo{
+    background-image: url(Images/router.jpg);
+}
+
+#bedmattress{
+    background-image: url(Images/bedmattress.jpg);
+}
+
+#refrigerator{
+    background-image: url(Images/refrigerator.jpg);
+}
+
+#computertable{
+    background-image: url(Images/computertable.jpg);
+}
+
+/* Footer Section */
+
+.footer{
+    width: 100%;
+    height: 173px;
+
+    background: #fff;
+}
+
+.footer__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    height: 100%;
+}
+
+.footer__content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 30px;
+
+}
+
+.content__item--left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    margin: 0px;
+    padding: 0px;
+
+    height: 104.8px;
+}
+
+.content__title, .content__subtitle{
+    font-family: 'Inter';
+    color: #000;
+
+    margin: 0px;
+    padding: 5px;
+
+    text-decoration: none;
+}
+
+.content__title{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.content__subtitle{
+    font-size: 12px;
+}
+
+.navbar__divider--footer{
+    width: 2px;
+    height: 90px;
+
+    background-color: #000;
+}
+
+.content__item--right{
+    height: 107.2px;
+}
+
+.icon__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+
+    margin-top: 15px;
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram{
+    font-size: 2em;
+
+    text-align: center;
+
+    width: 36px;
+
+    padding: 0px;
+
+    color: #000;
+
+    transition: all 1s ease-out;
+}
+
+.fa-facebook:hover, .fa-twitter:hover, .fa-instagram:hover{
+    color: #a89687;
+
+    transition: all 1s ease;
+}
+
+.item__safety{
+    display: flex;
+    flex-direction: column;
+    
+    width: 580px;
+}
+
+.content__text{
+    font-family: 'Inter';
+    font-size: 10px;
+
+    padding: 5px;
 }
