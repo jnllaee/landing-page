@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inter&family=Poppins&family=Raleway&family=Roboto&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inter&family=Poppins&family=Raleway&family=Roboto&family=Work+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="aboutUs.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/fontawesome.min.css"/>
@@ -17,13 +17,13 @@
     <nav class="navbar">
         <div class="navbar__bg"></div>
         <header class="navbar__container">
-            <a href="" class="navbar__logo">
+            <a href="index.html" class="navbar__logo">
                 <img src="Images/elbuy.png" alt="LOGO" srcset="" class="logo logo--light">
                 <img src="Images/elbuy-dark.png" alt="" srcset="" class="logo logo--dark">
             </a>
             <form class="navbar__search">
                 <div class="input__container">
-                    <i class="fa fa-magnifying-glass icon"></i>
+                    <i class="fa fa-magnifying-glass icon" aria-hidden="false"></i>
                     <input type="text" class="input__placeholder" placeholder="Search">
                 </div>
             </form>
@@ -72,17 +72,117 @@
         <div class="devs__container">
             <div class="devs__title">
                 <h1 class="devs__title devs__title--large">Meet the Devs</h1>
-                <p class="devs__title devs__title--subtitle">The people making your ELBuy experience better.</p>
+                <p class="devs__title devs__title--subtitle">The people who work on making your ELBuy experience better.</p>
             </div>
             <div class="devs__items">
-                <div class="devs__items  devs__items--one">
-                    <div class="items__container">
-                        
+                <div class="items__container items__container--one">
+                    <div class="items__placeholder"></div>
+                    <div class="items__hover">
+                        <div class="items__text">
+                            <h1 class="devs__info devs__info--name">Janelle Maxine Mangalao</h1>
+                            <h3 class="devs__info devs__info--subtitle">BS Computer Science</h3>
+                        </div>
+                        <span class="socials__container">
+                            <a href="/" class="devs__socials devs__socials--facebook">
+                                <i class="fa fa-facebook icon"></i>
+                            </a>
+                            <a href="/" class="devs__socials devs__socials--twitter">
+                                <i class="fa fa-twitter icon"></i>
+                            </a>
+                            <a href="/" class="devs__socials devs__socials--instagram">
+                                <i class="fa fa-instagram icon"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="items__container items__container--two">
+                    <div class="items__placeholder"></div>
+                    <div class="items__hover">
+                        <div class="items__text">
+                            <h1 class="devs__info devs__info--name">Ralph Rea</h1>
+                            <h3 class="devs__info devs__info--subtitle">BS Computer Science</h3>
+                        </div>
+                        <span class="socials__container">
+                            <a href="/" class="devs__socials devs__socials--facebook">
+                                <i class="fa fa-facebook icon"></i>
+                            </a>
+                            <a href="/" class="devs__socials devs__socials--twitter">
+                                <i class="fa fa-twitter icon"></i>
+                            </a>
+                            <a href="/" class="devs__socials devs__socials--instagram">
+                                <i class="fa fa-instagram icon"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="items__container items__container--three">
+                    <div class="items__placeholder"></div>
+                    <div class="items__hover">
+                        <div class="items__text">
+                            <h1 class="devs__info devs__info--name">France William Ureta</h1>
+                            <h3 class="devs__info devs__info--subtitle">BS Computer Science</h3>
+                        </div>
+                        <span class="socials__container">
+                            <a href="/" class="devs__socials devs__socials--facebook">
+                                <i class="fa fa-facebook icon"></i>
+                            </a>
+                            <a href="/" class="devs__socials devs__socials--twitter">
+                                <i class="fa fa-twitter icon"></i>
+                            </a>
+                            <a href="/" class="devs__socials devs__socials--instagram">
+                                <i class="fa fa-instagram icon"></i>
+                            </a>
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__content footer__content--left">
+                <div class="content__item content__item--left">
+                    <h3 class="content__title">CUSTOMER SERVICE</h3>
+                    <a href="/" class="content__subtitle">Contact Us</a>
+                    <a href="/" class="content__subtitle">FAQ</a>
+                </div>
+                <div class="content__item content__item--left">
+                    <h3 class="content__title">ABOUT US</h3>
+                    <a href="/aboutUs.html" class="content__subtitle">ELBUY</a>
+                    <a href="/" class="content__subtitle">Privacy Policy</a>
+                </div>
+                <div class="content__item content__item--left">
+                    <h3 class="content__title">MY ACCOUNT</h3>
+                    <a href="/" class="content__subtitle">Sign Up</a>
+                    <a href="/" class="content__subtitle">Renew Membership</a>
+                    <a href="/" class="content__subtitle">How To Sell</a>
+                </div>
+            </div>
+            <div class="navbar__divider navbar__divider--footer"></div>
+            <div class="footer__content footer__content--right">
+                <div class="content__item content__item--right">
+                    <h3 class="content__title">FOLLOW US</h3>
+                    <span class="icon__container">
+                        <a href="/" class="icon__facebook">
+                            <i class="fa fa-facebook icon"></i>
+                        </a>
+                        <a href="/" class="icon__twitter">
+                            <i class="fa fa-twitter icon"></i>
+                        </a>
+                        <a href="/" class="icon__instagram">
+                            <i class="fa fa-instagram icon"></i>
+                        </a>
+                    </span>
+                </div>
+                <div class="content__item content__item--right">
+                    <div class="item__safety">
+                        <h3 class="content__title">SAFETY AND AUTHENTICITY</h3>
+                        <p class="content__text">ELBUY values the safety of its consumers and the authenticity of the items placed in the website. Security and convenience will always be of utmost importance for ELBUY. Since it caters to everyone within the UPLB community, rest assured that ALL members are verified (both students and faculty) and checked. Similarly, any personal information is confidential and is not for sale in any way. ELBUY wishes to promote a safe environment for the convenience of all.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 <script src="app.js"></script>
 <script src="https://kit.fontawesome.com/8550ea647c.js" crossorigin="anonymous"></script>
